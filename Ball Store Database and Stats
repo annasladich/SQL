@@ -1,0 +1,22 @@
+--Create a grocery store database
+
+CREATE TABLE balls (id INTEGER PRIMARY KEY, name TEXT, color TEXT, size TEXT, inventory TEXT, price INTEGER);
+
+INSERT into balls VALUES (1, "basketball", "orange", "medium", 5, 2.00);
+INSERT into balls VALUES (2, "tennis", "yellow", "small", 5, 1.00);
+INSERT into balls VALUES (3, "volleyball", "white", "medium", 5, 2.50);
+INSERT into balls VALUES (4, "baseball", "white", "small", 5, 1.00);
+INSERT into balls VALUES (5, "soccer", "black/white", "medium", 5, 2.50);
+INSERT into balls VALUES (6, "ping pong", "white", "small", 5, 1.00);
+INSERT into balls VALUES (7, "football", "brown", "medium", 5, 3.00);
+INSERT into balls VALUES (8, "wiffle", "white_or_yellow", "small", 5, 2.00);
+INSERT into balls VALUES (9, "golf", "white", "small", 5, 1.00);
+INSERT into balls VALUES (10, "bowling", "multicolor", "medium", 5, 3.00);
+INSERT into balls VALUES (11, "cricket", "red", "small", 5, 2.00);
+INSERT into balls VALUES (12, "beach", "multicolor", "medium", 5, 2.50);
+INSERT into balls VALUES (13, "rugby", "multicolor", "medium", 5, 3);
+INSERT into balls VALUES (14, "pool", "multicolor", "small", 5, 1.00);
+INSERT into balls VALUES (15, "paddle", "red", "small", 5, 1.00);
+
+--display the database ordered by price. 
+SELECT * from balls ORDER BY price asc;
